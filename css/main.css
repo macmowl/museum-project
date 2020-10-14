@@ -21,7 +21,7 @@ html {
     src: url('../media/font/Prata/Prata-Regular.ttf') format('ttf');
 }
 
-section {
+main {
     display: grid;
     grid-template-columns: 1fr 1180px 1fr;
     grid-template-rows: auto;
