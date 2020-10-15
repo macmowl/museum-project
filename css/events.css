@@ -86,3 +86,35 @@ section {
 
 
 
+/*font*/
+
+@font-face {
+    font-family: 'muli';
+    src: url('../media/font/muli/Muli.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'prata';
+    src: url('../media/font/Prata/Prata-Regular.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: 'prata';
+    color: black;
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.0rem;
+}
+
+h3 {
+    font-size: 2.0rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
