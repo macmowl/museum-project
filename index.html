@@ -14,10 +14,9 @@
         <nav>
             <div class="topnav">
                 <div class="topnav__opening">
-                    <i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup>
-                    <div class="separator"> </div>
-                    <i class="far fa-map"></i>
-                    Get Direction
+                    <span><i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup></span>
+                    <div class="topnav__separator"> </div>
+                    <span><i class="far fa-map"></i> Get Direction</span>
                 </div>
                 <div class="topnav__social">
                     <i class="fab fa-facebook-f"></i>
@@ -33,82 +32,99 @@
             <div class="bottomnav">
                 <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
                 <ul class="bottomnav__list">
-                    <li>Home</li>
-                    <li>The Museum</li>
+                    <li><a href="hindex.html">Home</a></li>
+                    <li><a href="events.html">The Museum</a></li>
                     <li>Visit</li>
                     <li>What's on</li>
                     <li>Collections</li>
                     <li>Pages</li>
-                    <li><i class="fas fa-shopping-cart"></i></li>
-                    <li><div class="separator"> </div></li>
-                    <li><i class="fas fa-bars"></i></li>
+                    <ul>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><div class="separator"> </div></li>
+                        <li><i class="fas fa-bars text--primary"></i></li>
+                    </ul>
+                    
 
                 </ul>
             </div>
         </nav>
     </header>
     <!-- -------------- Hero ----------------- -->
-    <section class="hero">
-        <p>The past is our future</p>
-        <h1>World's Leading Museum of History</h1>
-        <h2>Over 2.3k Collection</h2>
-        <p>Let your inner light grow with the silence of history</p>
-        <button>Find out more</button>
-        <div class="bullets">
+    <section class="hero grid">
+        <div class="hero__wrapper">
+            <p class="hero--uppercase">The past is our future</p>
+            <h1>World's Leading Museum of History</h1>
+            <h2>Over 2.3k Collection</h2>
+            <p>Let your inner light grow with the silence of history</p>
+            <button class="btn btn--white">Find out more</button>
+        </div>
+        <div class="hero__bullets">
             Don't forget the bullets!!
         </div>
     </section>
-    <section class="grid">
-        <div class="images">
-            <img src="" alt="">
-            <img src="" alt="">
+    <!-- -------------- About us ----------------- -->
+    <section class="about">
+        <div class="about__history">
+            <p class="subtitle">about us</p>
+            <h2>History of Egypt</h2>
+            <h3>The World's leading museum of history & culture</h3>
+            <p>Suspendisse varius, neque quis posuere pellentesque, urna odio iaculis ipsum, at laoreet enim risus sed ante. Pellentesque eleifend posuere bibendum. In fermentum vitae quam at auctor. Mauris pellentesque tincidunt leo vitae interdum.</p>
+            <p>Vivamus malesuada volutpat nulla ut ultrices. Vivamus fermentum sodales diam sed aliquam. Ut in leo nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nunc arcu. Duis feugiat erat non pulvinar venenatis.</p>
+            <button class="btn btn--primary">more details</button>
         </div>
-        <p class="subtitle">about us</p>
-        <h2>History of Egypt</h2>
-        <h3>The World's leading museum of history & culture</h3>
-        <p>Nullam sollicitudin ante nunc, quis ornare odio placerat ac. Suspendisse varius, neque quis posuere pellentesque, urna odio iaculis ipsum, at laoreet enim risus sed ante. Pellentesque eleifend posuere bibendum. In fermentum vitae quam at auctor. Mauris pellentesque tincidunt leo vitae interdum.</p>
-        <p>Aenean blandit elit id rhoncus congue. Cras sed velit arcu. Vivamus malesuada volutpat nulla ut ultrices. Vivamus fermentum sodales diam sed aliquam. Ut in leo nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet nunc arcu. Duis feugiat erat non pulvinar venenatis.</p>
-        <button>more details</button>
+        
+        <div class="about__images">
+            <div class="about__redsquare"> </div>
+            <img class="about__image2" src="media/home/about-2-2.jpg" alt="the Great Hall">
+            <div class="about__outlinesquare"> </div>
+            <img class="about__image1" src="media/home/about-2-1.jpg" alt="Rosetta stone">
+            
+        </div>
     </section>
     <!-- -------------- Exhibitions ----------------- -->
     <section class="exhibitions">
-        <div class="grid">
-            <p class="subtitle">exhibition</p>
-            <h1>Ongoing exhibitions</h1>
-            <div class="exhibition">
-                <img src="" alt="">
-                <p>Exhibition</p>
+        <div class="exhibitions__grid">
+            <div class="exhibitions_title">
+                <p class="subtitle">exhibition</p>
+                <h2>Ongoing exhibitions</h2>
+            </div>
+            <article id="exhib1" class="exhibition">
+                <img src="media/home/collections-3-1.jpg" alt="">
+                <p class="exhibition__thema">Exhibition</p>
                 <h4>The Exhibits cover all time of the egyption civilization.</h4>
-                <div>
-                    <p></p>
-                    <button>read more</button>
+                <div class="exhibition__datemore">
+                    <p class="exhibition__date">aug 12, 2020 --- oct 31, 2020</p>
+                    <div class="exhibition__separator"> </div>
+                    <button class="btn btn--black">read more</button>
                 </div>
-            </div>
-            <div class="exhibition">
-                <img src="" alt="">
-                <p>Exhibition</p>
+            </article>
+            <article id="exhib2" class="exhibition">
+                <img src="media/home/collections-3-2.jpg" alt="">
+                <p class="exhibition__thema">Exhibition</p>
                 <h4>Hadrian and Athens conversing with an Ideal World</h4>
-                <div>
-                    <p></p>
-                    <button>read more</button>
+                <div class="exhibition__datemore">
+                    <p class="exhibition__date">aug 12, 2020 --- oct 31, 2020</p>
+                    <div class="exhibition__separator"> </div>
+                    <button class="btn btn--black">read more</button>
                 </div>
-            </div>
-            <div class="exhibition">
-                <img src="" alt="">
-                <p>Exhibition</p>
+            </article>
+            <article id="exhib3" class="exhibition">
+                <img src="media/home/collections-3-3.jpg" alt="">
+                <p class="exhibition__thema">Exhibition</p>
                 <h4>Classicita ed Europa. The common destiny of Greece and Italy.</h4>
-                <div>
-                    <p></p>
-                    <button>read more</button>
+                <div class="exhibition__datemore">
+                    <p class="exhibition__date">aug 12, 2020 --- oct 31, 2020</p>
+                    <div class="exhibition__separator"> </div>
+                    <button class="btn btn--black">read more</button>
                 </div>
-            </div>
+            </article>
+            
+            
         </div>
     </section>
     <!-- -------------- Events ----------------- -->
     <section class="events">
-        <div class="grid">
-            
-        </div>
+    
     </section>
     <main>
     </main>
