@@ -1,15 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-}
 
-html {
-    box-sizing: border-box;
-    font-family: 'muli';
-    font-size: 62.5%;
-    color: #777;
-}
+/* ------------  Reset and set the styles ----------- */
 
 @font-face {
     font-family: 'muli';
@@ -21,14 +11,36 @@ html {
     src: url('../media/font/Prata/Prata-Regular.ttf') format('ttf');
 }
 
-main {
+:root {
+    --primary-color: #D99578;
+    --dark-primary-color: #C26B46; 
+    --secondary-color: #302E2F;
+    --light-color: #F2EBE8;
+    --lightGrey-color: #777777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'muli';
+    font-size: 62.5%;
+    color: var(--lightGrey-color);
+}
+
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1180px 1fr;
+    grid-template-columns: 1fr 70% 1fr;
     grid-template-rows: auto;
 }
 
 h1, h2, h3 {
     font-family: 'prata';
+    color: black;
 }
 
 h1 {
@@ -42,4 +54,119 @@ h2 {
 h3 {
     font-size: 2.0rem;
 }
+
+p {
+    font-size: 1.4rem;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    background: none;
+}
+
+.btn--primary {
+    color: white;
+    background-color: var(--primary-color);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn--primary:hover {
+    color: white;
+    background-color: var(--dark-primary-color);
+}
+
+.btn--black {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.btn--white {
+    color: white;
+    background-color: white;
+    border: 1ps solid var(--secondary-color);
+}
+
+.btn--outline {
+    color: var(--lighGrey-color);
+    border: 1px solid var(--lightGrey-color);
+}
+
+/* -------------- Header --------------- */
+
+header nav {
+    height: 140px;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". topnav ."
+        ". bottomnav ."
+    ;
+    font-size: 1.6rem;
+}
+
+.topnav {
+    grid-area: topnav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 7px;
+    padding-bottom: 7px; */
+}
+
+.topnav__opening i {
+    color: var(--primary-color);
+}
+
+.topnav__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+.topnav__social button {
+    padding: 10px;
+}
+
+header .separator {
+    display: inline;
+    border-left: 1px solid var(--lightGrey-color);
+    height: 38px;
+    width: 1px;
+}
+
+.bottomnav {
+    grid-area: bottomnav;
+    border-top: 1px solid var(--lightGrey-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomnav__logo {
+    width: 200px;
+}
+
+.bottomnav__list {
+    list-style-type: none;
+    display: flex;
+}
+
+.bottomnav__list li {
+    margin-right: 30px;
+}
+
+.bottomnav__list li:last-child {
+    margin-right: 0;
+}
+
+
+
+
 
