@@ -1,6 +1,6 @@
 /*general*/
 
-main {
+section {
     width: 100%;
     max-width: 800px;
     margin-right: auto;
@@ -14,10 +14,13 @@ main {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
 }
 
 .grid--picture {
     display: grid;
+    position: relative;
+    z-index: 99;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:'one two'
@@ -62,9 +65,24 @@ main {
     grid-area: six;
 }
 
-/*Text on picture*/
+/*Text on picture Grid*/
 
-.bloc--text {
-    width: 30px;
-    
+.box1 {
+    padding: 20px 20px;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    top:200px;
 }
+
+.box1--text1 {
+    margin-right:100px;
+    background-color: white;
+}
+
+.box1--text2 {
+    background-color: white;
+}
+
+
+
