@@ -1,4 +1,70 @@
-.grid {
+/*general*/
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*GRID Picture*/
+
+.grid{
+    width: 100%;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid--picture {
     display: grid;
-  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:'one two'
+                        'three four' 
+                        'five six' ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.grid--picture_size{
+    width: 400px;
+
+}
+
+.grid--picture_onepicture{
+    grid-area: one;
+
+}
+
+.grid--twopicture{
+    grid-area: two;
+
+}
+
+.grid--threepicture{
+    grid-area: three;
+
+}
+
+.grid--fourpicture{
+    grid-area: four;
+
+}
+
+.grid--fivepicture{
+    grid-area: five;
+    
+}
+
+
+.grid--sixpicture{
+    grid-area: six;
+}
+
+/*Text on picture*/
+
+.bloc--text {
+    width: 30px;
+    
 }
