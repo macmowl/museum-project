@@ -1,9 +1,16 @@
 /*general*/
 
 
+.containerhero {
+    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
+    background-repeat: no-repeat;
+    margin-top: -16px;
+    height: 250px; 
+    background-position:center;
+    background-size: cover;
+}
+
 /*GRID Picture*/
-
-
 .flex {
     margin-right: auto;
     margin-left: auto;
