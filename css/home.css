@@ -340,7 +340,7 @@ left: 50%;
 /* ----------- Member ---------- */
 
 .member {
-    background-image: linear-gradient(to left, rgba(217, 149, 120, 0.8), rgba(48, 46, 47, 0.8)),
+    background-image: linear-gradient(to left, rgba(217, 149, 120, 0.9), rgba(48, 46, 47, 0.9)),
                         url('../media/home/video-bg-1-1.jpg');
     background-repeat: repeat;
     background-position-y: 120%;
@@ -386,3 +386,32 @@ left: 50%;
     margin-bottom: 15px;
     padding-left: 20px;
 }
+
+/* ----------- Collections ---------- */
+
+.collections {
+    display: grid;
+    grid-template-columns: 1fr 70% fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". title ."
+        ". collection ."
+    ;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    color: var(--secondary-color);
+}
+
+.collections__title {
+    grid-area: title;
+    
+    
+}
+
+.collections__grid {
+    grid-area: collection;
+}
+
+
+
