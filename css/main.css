@@ -32,9 +32,10 @@ html {
     color: var(--lightGrey-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'prata';
     color: black;
+    font-weight: 100;
 }
 
 h1 {
@@ -54,7 +55,6 @@ h3 {
 
 h4 {
     font-size: 2.0rem;
-    margin-bottom: 1rem;
 }
 
 p {
@@ -91,7 +91,13 @@ p {
 .btn--white {
     color: var(--secondary-color);
     background-color: white;
-    border: 1ps solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.btn--white:hover {
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 .btn--outline {
