@@ -4,24 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad9205c9ea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/events.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav></nav>
-        <div class="hero">
-        </div>
+        <nav>
+            <div class="topnav">
+                <div class="topnav__opening">
+                    <span><i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup></span>
+                    <div class="topnav__separator"> </div>
+                    <span><i class="far fa-map"></i> Get Direction</span>
+                </div>
+                <div class="topnav__social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <div class="separator"> </div>
+                    <button class="btn btn--outline"><i class="fas fa-search"></i></button>
+                    <button class="btn btn--outline">EN <i class="fas fa-chevron-down"></i></button>
+                    <button class="btn btn--primary">tickets</button>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                <ul class="bottomnav__list">
+                    <li><a href="hindex.html">Home</a></li>
+                    <li><a href="events.html">The Museum</a></li>
+                    <li>Visit</li>
+                    <li>What's on</li>
+                    <li>Collections</li>
+                    <li>Pages</li>
+                    <ul>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><div class="separator"> </div></li>
+                        <li><i class="fas fa-bars text--primary"></i></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
 
-         <div class="containerhero"> <!--picture hero-->
-          <div class="containerhero--picture">
-              <h1>Welcome</h1>
-          </div>
+        <!--Hero and NAV-->
+
+         <div class="containerhero"> 
+
+            <!--NAV-->
+        <div class="click--select">
+
+            <select class="click--select_box" name="Categories" id="Categories-select">
+                <option class="click--select_box_text" value="">All Categories</option>
+                <option class="click--select_box_text" value="Allevent">All Event</option>
+                <option class="click--select_box_text" value="Allevent">All Event</option>
+                <option class="click--select_box_text" value="Allevent">All Event</option>
+                <option class="click--select_box_text" value="Allevent">All Event</option>
+            </select>
+
+            <select class="click--select_box" name="Location" id="locations-select">
+                <option class="click--select_box_text" value="">All Location</option>
+                <option class="click--select_box_text" value="Alllocation">All Location</option>
+                <option class="click--select_box_text" value="Alllocation">All Location</option>
+                <option class="click--select_box_text" value="Alllocation">All Location</option>
+                <option class="click--select_box_text" value="Alllocation">All Location</option>
+            </select>
+
+            <select class="click--select_box" name="Event" id="Event-select">
+                <option class="click--select_box_text" value="">All Event</option>
+                <option class="click--select_box_text" value="ALLevent">All Event</option>
+                <option class="click--select_box_text" value="ALLevent">All Event</option>
+                <option class="click--select_box_text" value="ALLevent">All Event</option>
+        </select>
+
+        <button class="click--select_button">FIND EVENT</button>
+    </div>
+            <!--Hero-->
+              <h1 class="containerhero--picture_title"> November - 2019</h1>
+                <div class="containerhero--picture_info" >
+                    <div>Search By Month &nbsp;</div>
+                    <div class="containerhero--picture_info_line"> &nbsp;&nbsp;&nbsp;</div>
+                    <div>&nbsp;&nbsp;&nbsp; Search By Date <a class="containerhero--picture_info_icon"><i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </a></div> 
+            </div>
         </div>
+    
 
           <!--picture gallery and text-->
 
