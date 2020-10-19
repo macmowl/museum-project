@@ -3,56 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ad9205c9ea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/event_details.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav></nav>
-        <div class="hero">
+        <nav>
+            <div class="topnav">
+                <div class="topnav__opening">
+                    <span><i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup></span>
+                    <div class="topnav__separator"> </div>
+                    <span><i class="far fa-map"></i> Get Direction</span>
+                </div>
+                <div class="topnav__social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <div class="separator"> </div>
+                    <button class="btn btn--outline"><i class="fas fa-search"></i></button>
+                    <button class="btn btn--outline">EN <i class="fas fa-chevron-down"></i></button>
+                    <button class="btn btn--primary">tickets</button>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                <ul class="bottomnav__list">
+                    <li><a href="hindex.html">Home</a></li>
+                    <li><a href="events.html">The Museum</a></li>
+                    <li>Visit</li>
+                    <li>What's on</li>
+                    <li>Collections</li>
+                    <li>Pages</li>
+                    <ul>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><div class="separator"> </div></li>
+                        <li><i class="fas fa-bars text--primary"></i></li>
+                    </ul>
+                    
 
-        </div>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section class="container">
+            <!--Hero-->
+        <div class="containerhero"> 
+              <h1 class="containerhero--picture_title"> Indepenent Japanese Antiquity</h1>
+        </div>
 
-           <div class="navevent">
-               <div>About Event</div>
-               <div>Schedule</div>
-               <div>Galery</div>
-               <div>Contact</div>
-           </div>
+    <div class="flexboxtop">
 
-           <form class="Online Booking" method="post" action="#">
-            <label for="name"> <strong> Online Booking</strong> </label>
-            <input name="name" type="texte" placeholder="Your name" required/>
-            <input type="email" placeholder="Email Adress" required/>
-            <input type="number" name="howmuch">
-            <label for="name"> Children </label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="PROCEED TO BOOK"/>
-           </form>
-
-           <div>
-               <h2>Details About Event</h2>
-            Equal blame belongs to those who fail in their duty through weakness of will, wich is the same as
-            saying through shrinking from toil and pain.
+                <!--NAV-->
             
-            These cases are perfectly simple and easy to distinguich. In a free hour, when our power of choice is
-            untrammelled and when nothing every pleasure is to be welcomed and every pain avoided. But in
-            certain circumstances and owing to the claims of duty or the obligations of business.
-           </div>
+            <div class="click--select">
 
-           <div>
-                <h2>Details About Event</h2>
-                <div></div>
-                <div></div>
-                <div></div>
-           </div>
+                    <div class="click--select_box1">
+                                <h2>About Event</h2>
+                    </div>
+                
+                    <div class="click--select_box2">
+                                <h2>Schedule</h2>
+                    </div>
+                
+                    <div class="click--select_box3">
+                            <h2> Gallery</h2>
+                    </div>
+
+                    <div class="click--select_box4">
+                            <h2>Contact</h2>
+                    </div>
+            </div>
 
 
-        </section>
+            <!-- TEXT AND PICTURE EGYPT -->
+
+            <div class="containerinfo">
+
+                <div class="text">
+                    <h2 class="text_white">Date & Time</h2>
+                    <a class="text_icone"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </a>
+                    04 Nov 2919, 10.00 to 15.00 
+                </br>
+                </br>
+                    <hr class="text_ligne">
+                </br>
+
+                    <h2 class="text_white">Location</h2>
+                    <a class="text_icone"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    </a>
+                    246 King Street, Ny 10011
+                </br>
+                </br>
+                    <hr class="text_ligne">
+                </br>
+
+                    <h2 class="text_white">Organizer</h2>
+                    <a class="text_icone"><i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                    Egypt Historical Museum
+                </br>
+                </br>
+                    <hr class="text_ligne">
+                </br>
+
+                    <h2 class="text_white">Ticket Cost</h2>
+                    <a class="text_icone"><i class="fa fa-money" aria-hidden="true"></i>
+                    </a>
+                    Adults-$15/Childrens-$10
+                </br>
+                </br>
+                    <hr class="text_ligne">
+                </br>
+                    <strong class="text_members">*Free for Museom Members</strong>
+
+                    <div class="picture">
+                    </div>
+
+                </div> 
+
+                <div class="pictureegypt">
+                </div>
+
+            </div>
+
+                <!--FORM-->
+
+            <aside class="containerform">
+
+                <div class="message">
+
+                    <form class="message--box" method="post" action="#">
+
+                        <label class="message--box_textone" ><label for="name"> <h2> Online Booking</h2></label>
+
+                        <input class="message--box_texttwo" name="name" type="texte" placeholder="Your name" required/>
+
+                        <input class="message--box_texthree" type="email" placeholder="Email Adress" required/>
+
+                    <div class="message--box_flex">
+                        <input class="message--box_flex_textfour" type="number" name="howmuch">
+                        <label class="message--box_flex_textfive" for="name">Children</label>
+                    </div>
+                        <textarea class="message--box_textsix" name="message" id="message"></textarea>
+
+                        <input class="message--box_textseven" type="submit" value="PROCEED TO BOOK"/>
+                
+                    </form>
+
+                </div>
+            </aside>
+    </div>
+
+
+
+                <!--TEXT ABOUT EVENT-->
+
+                <div class="textdetails">
+                    <h2>Details About Event
+                    </h2>
+                        Equal blame belongs to those who fail in their duty through weakness of will, wich is the same as
+                        saying through shrinking from toil and pain. 
+                    </br>
+                    </br>
+                        These cases are perfectly simple and easy to distinguich. In a free hour, when our power of choice is
+                        untrammelled and when nothing every pleasure is to be welcomed and every pain avoided. But in
+                        certain circumstances and owing to the claims of duty or the obligations of business.
+                </div> 
+
+                  <!--TEXT EVENT SCHEDULE-->
+
+                  <div class="textdetails">
+
+                    <h2 class="textdetails_hours">Event Schedule
+                    </h2>
+                        <div class="textdetails_ampmone">
+                            10am-12pm
+                        </div>
+                        <div class="textdetails_ampmtwo">
+                            1pm-4pm
+                        </div>
+                        <div class="textdetails_ampmthree">
+                            4.30pm-6pm
+                        </div>
+                    
+                        <div class="textdetails_expo">
+                            <h3 class="textdetails_title_intro">
+                                Introduction of independent Japanese antiquity
+                            </h3>
+                            Enjoy a 2 hours express Hightlights
+                        </div>
+                        <div>
+                           <h3 class="textdetails_title_jap">
+                               A curated selection of Japanese antiques 
+                            </h3>
+                            This program will take in Classroom B
+                        </div>
+                        <div>
+                            <h3 class="textdetails_title_ant">
+                                Know Antiques roadshow appraiser from exper
+                            </h3>
+                            Owing to the claims of duty the obligations
+                        </div>
+                     
+                </div> 
+
+
+
+
     </main>
+    
 </body>
 </html>

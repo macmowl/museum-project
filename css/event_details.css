@@ -1,0 +1,335 @@
+/*flexboxtop*/
+
+.flexboxtop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+/*NAV*/
+.click--select{
+    display: flex;
+    margin: 5% 20%;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    width: 780px;
+}
+
+.click--select_box1{
+    background-color: white;
+    border: 0.5px;
+    height: 40px;
+    width: 150px;
+    border: 0.5px;
+    border-style: solid solid solid none;
+    border-color: #e4e4e4;
+
+    font-weight: 100;
+    text-align: center;
+
+    padding: 10px 10px;
+}
+
+.click--select_box2{
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    border: 0.5px;
+    border-style: solid solid solid none;
+    border-color: #e4e4e4;
+
+    font-weight: 100;
+    text-align: center;
+
+    padding: 10px 10px;
+}
+
+.click--select_box3{
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    border: 0.5px;
+    border-style: solid solid solid none;
+    border-color: #e4e4e4;
+
+    font-weight: 100;
+    text-align: center;
+
+    padding: 10px 10px;
+
+}
+
+.click--select_box4{
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    border: 0.5px;
+    border-style: solid none solid none;
+    border-color: #e4e4e4;
+
+    font-weight: 100;
+    text-align: center;
+
+    padding: 10px 10px;
+}
+
+.click--select_box_text{
+    background-color: white;
+}
+
+.click--select_button {
+    padding: 2px 2px;
+    position: relative;
+    background-color:#302e2f;
+    color: white;
+    border: 0.5px solid #302e2f;
+    border-radius: 3px;
+    margin: 0px 0px 0px 15px;
+}
+
+/*Hero*/
+
+.containerhero { /*picture hero*/
+    display: flex;
+    flex-direction: column;
+    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
+    background-repeat: no-repeat;
+    height: 420px; 
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.containerhero--picture_title{ /*Titre hero*/
+    color: white;
+    margin-top: 50px;
+}
+
+.containerhero--picture_info{ /*Text hero*/
+    display: flex;
+    width: 350px;
+    padding: 40px;
+    padding: 10px 10px 10px 10px;
+    border: 0.5px;
+    border-style: solid none none none;
+    border-color: #e4e4e4;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.containerhero--picture_info_line{
+    border: 0.5px;
+    border-style: none solid none none;
+    border-color: #e4e4e4;
+}
+
+/*TEXT AND PICTURE EGYPT*/
+
+.containerinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #302e2f;
+    width: 690px;
+    margin-left: 20%;
+}
+
+.text{
+    width: 240px;
+    padding: 20px 20px;
+}
+
+.text h3 {
+    color:#e4e4e4;
+}
+
+.text_white{
+    color: white;
+}
+
+.pictureegypt{
+    margin: 0px 0x 15px 0px; 
+    width: 380px;
+    background-image:url("../media/imageseventsdetails/event-d-1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: right;
+    vertical-align:right;
+}
+
+
+/*hr et icones*/
+
+.text_ligne {
+    border: 0,1em solid  #abadb0;
+}
+
+.text_icone {
+    color: #d99578;
+}
+
+.flex--picture--text_arrow {
+    color: #d99578;
+}
+
+/* FORM */
+
+.containerform{
+    width: 380px;
+    max-width: 400px;
+    height: 600px;
+    padding: 20px 20px;
+    color: #abadb0;
+}
+
+
+.message { 
+    background-color: #302e2f;
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    border-radius: 5px;
+    padding: 25px 25px 25px 25px;
+}
+
+.message--box_textone h2{ /*Title*/
+    color: #e4e4e4;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 2em;
+}
+
+.message--box_texttwo{ /*Name*/
+    height: 50px;
+    width:82%;
+    margin: 15px 15px;
+    background-color: #302e2f;
+    border: 0.5px solid  gray;
+    color: #e4e4e4;
+    border-radius: 3px;
+}
+
+.message--box_texthree{ /*EMAIL*/
+    height: 50px;
+    width:82%;
+    margin: 15px 15px;
+    background-color: #302e2f;
+    border: 0.5px solid  gray;
+    color: #e4e4e4;
+    border-radius: 3px;
+}
+
+.message--box_flex{ /*NUMBER + CHILDREN FLEX*/
+    height: 50px;
+    border: none;
+    display: flex;
+    margin: 15px 15px;
+}
+
+.message--box_flex_textfour{ /*NUMBER + -*/
+    height: 50px;
+    width: 120px;
+    margin-right: 25px;
+    background-color: #302e2f;
+    border: 0.5px solid  gray;
+    color: #e4e4e4;
+    border-radius: 3px;
+}
+
+.message--box_flex_textfive{ /*CHILDREN*/height: 100px;
+    height: 50px;
+    width: 120px;
+    background-color: #302e2f;
+    border: 0.5px solid  gray;
+    color: #e4e4e4;
+    border-radius: 3px;
+    font-size: 2em;
+}
+
+.message--box_textsix{ /*Message*/
+    width:82%;
+    height: 100px;
+    margin: 15px 15px;
+    background-color: #302e2f;
+    border: 0.5px solid  gray;
+    color: #e4e4e4;
+    border-radius: 3px;
+}
+
+.message--box_textseven{ /*BUTTON*/
+    width:82%;
+    margin: 15px 15px;
+    background-color: #D99578;
+    border: 0.5px solid #D99578;;
+    color: white;
+    border-radius: 5px;
+    padding: 13px 13px;
+}
+
+/*TEXT DETAILS ABOUT EVENT*/
+
+.textdetails{
+    margin: 0% 20%;
+    width: 690px;
+}
+
+.textdetails_title {
+    display: flex;
+    flex-direction: row-column;
+}
+
+.textdetails_expo{
+    
+}
+
+
+/*font*/
+
+@font-face {
+    font-family: 'muli';
+    src: url('../media/font/muli/Muli.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'prata';
+    src: url('../media/font/Prata/Prata-Regular.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: 'prata';
+    color: black;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 0.3rem;
+}
+

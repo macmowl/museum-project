@@ -1,16 +1,107 @@
-/*general*/
+/*HEADER*/
 
-
-.containerhero {
-    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
-    background-repeat: no-repeat;
-    margin-top: -16px;
-    height: 250px; 
-    background-position:center;
-    background-size: cover;
+.topnav{
+    font-size: 0.6em;
 }
 
-/*GRID Picture*/
+/*NAV*/
+
+    .click--select{
+    position: absolute;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px 40px;
+} 
+
+.click--select_box{
+    /*arrow none*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    border: 0.5px solid white;
+
+    font-family:arial;  
+    font-weight: 100;
+    color: gray;
+    font-size: 1.1em;
+
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+    background-size: 6px;
+    background-position-x: 12em;
+
+    border-style: none solid none none;
+    border-color: #e4e4e4;
+}
+
+.click--select_box_text{
+    background-color: white;
+}
+
+.click--select_button {
+    padding: 2px 2px;
+    position: relative;
+    background-color:#302e2f;
+    color: white;
+    border: 0.5px solid #302e2f;
+    border-radius: 3px;
+    margin: 0px 0px 0px 15px;
+}
+
+/*Hero*/
+
+.containerhero { /*picture hero*/
+    display: flex;
+    flex-direction: column;
+    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
+    background-repeat: no-repeat;
+    margin-top: -26px;
+    height: 250px; 
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.containerhero--picture_title{ /*Titre hero*/
+    color: white;
+    margin-top: 50px;
+}
+
+.containerhero--picture_info{ /*Text hero*/
+    display: flex;
+    width: 350px;
+    padding: 40px;
+    padding: 10px 10px 10px 10px;
+    border: 0.5px;
+    border-style: solid none none none;
+    border-color: #e4e4e4;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.containerhero--picture_info_line{
+    border: 0.5px;
+    border-style: none solid none none;
+    border-color: #e4e4e4;
+}
+
+/*Flex Picture*/
+
 .flex {
     margin-right: auto;
     margin-left: auto;
@@ -58,11 +149,11 @@
     margin-right: 5px;
     background-color: white;
     border: 0.5px solid #e4e4e4;
+    border-radius: 5px;
     padding: 5px 5px;
     line-height: 0em;
     height: 25px;
     width: 40px;
-    border-radius: 5px;
 }
 
 .buttongalery--number{
@@ -70,16 +161,16 @@
     margin-right: 5px;
     background-color: white;
     border: 0.5px solid #e4e4e4;
+    border-radius: 5px;
     padding:5px 5px;
     line-height: 0em;
     height: 25px;
     width: 25px;
-    border-radius: 5px;
 }
 
 /*hr et icones*/
 
-hr {
+.flex--picture--text_ligne {
     border: 1px solid #e4e4e4;
 }
 
@@ -96,6 +187,10 @@ hr {
 .buttongalery :hover{
     background-color: #d99578;
     color:white;
+}
+
+.containerhero--picture_info :hover{
+    color:#f8d5bf;
 }
 
 
