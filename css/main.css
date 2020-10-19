@@ -70,12 +70,12 @@ p {
     text-transform: uppercase;
     background: none;
     text-align: center;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .btn--primary {
     color: white;
     background-color: var(--primary-color);
-    transition: background-color 0.2s ease-in-out;
 }
 
 .btn--primary:hover {
