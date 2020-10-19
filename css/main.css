@@ -218,6 +218,7 @@ header nav {
 
 .topnav__social__lang {
     height: 3.6rem;
+    text-decoration: none;
 }
 
 header .separator {
