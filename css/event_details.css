@@ -6,6 +6,48 @@
     align-items: flex-start;
 }
 
+/*Hero*/
+
+.containerhero { /*picture hero*/
+    display: flex;
+    flex-direction: column;
+    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
+    background-repeat: no-repeat;
+    height: 420px; 
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.containerhero--picture_title{ /*Titre hero*/
+    color: white;
+    margin-top: 50px;
+}
+
+.containerhero--picture_info{ /*Text hero*/
+    display: flex;
+    width: 350px;
+    padding: 40px;
+    padding: 10px 10px 10px 10px;
+    border: 0.5px;
+    border-style: solid none none none;
+    border-color: #e4e4e4;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.containerhero--picture_info_line{
+    border: 0.5px;
+    border-style: none solid none none;
+    border-color: #e4e4e4;
+}
+
 
 /*NAV*/
 .click--select{
@@ -96,48 +138,6 @@
     margin: 0px 0px 0px 15px;
 }
 
-/*Hero*/
-
-.containerhero { /*picture hero*/
-    display: flex;
-    flex-direction: column;
-    background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
-    background-repeat: no-repeat;
-    height: 420px; 
-    width: 100%;
-    background-position:center;
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.containerhero--picture_title{ /*Titre hero*/
-    color: white;
-    margin-top: 50px;
-}
-
-.containerhero--picture_info{ /*Text hero*/
-    display: flex;
-    width: 350px;
-    padding: 40px;
-    padding: 10px 10px 10px 10px;
-    border: 0.5px;
-    border-style: solid none none none;
-    border-color: #e4e4e4;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-}
-
-.containerhero--picture_info_line{
-    border: 0.5px;
-    border-style: none solid none none;
-    border-color: #e4e4e4;
-}
-
 /*TEXT AND PICTURE EGYPT*/
 
 .containerinfo{
@@ -163,15 +163,14 @@
 }
 
 .pictureegypt{
-    margin: 0px 0x 15px 0px; 
-    width: 380px;
+    margin: 0px 0px 15px 0px; 
+    width: 382px;
     background-image:url("../media/imageseventsdetails/event-d-1-1.jpg");
     background-repeat: no-repeat;
-    background-size: 380px;
+    background-size: 400px;
     background-position: right;
     vertical-align:right;
 }
-
 
 /*hr et icones*/
 
@@ -280,21 +279,104 @@
     padding: 13px 13px;
 }
 
-/*TEXT DETAILS ABOUT EVENT*/
+/*TEXT ABOUT EVENT*/
 
-.textdetails{
-    margin: 0% 20%;
+.detailsevent{
     width: 690px;
+    margin: 5% 20%;
+    font-size: 1.3em;
 }
 
-.textdetails_title {
+/*TEXT SCHEDULE*/
+
+.textdetailstitle{
+    width: 690px;
+    margin: 0% 20%;   
+}
+
+.textdetails{
+   display: flex;
+   align-content: center;
+   align-items: center;
+    margin: 0% 20%;
+    width: 690px;
+    padding: 10px 0px;
+}
+
+.textdetails_hours {
     display: flex;
-    flex-direction: row-column;
+    flex-direction: column;
+    font-size: 1.3em;
 }
 
 .textdetails_expo{
-    
+    display: flex;
+    flex-direction: column;   
+    font-size: 1.3em; 
 }
+
+.textdetails_hours_ampm{
+    margin: 35px 0px;
+    padding: 20px 20px;
+    border-color:#abadb0;
+    border-style: none solid none none;
+    border-right-width: thin;
+}
+
+.textdetails_expo_jap{
+    padding: 40px 20px;
+}
+
+.textdetails_expo_jap_title{
+    margin: 0px 0px 10px 0px;
+}
+
+/*GALLERY & CONTACT & MAP ----> FLEX*/
+
+.titlegallery{
+    width: 690px;
+    margin: 0% 20%; 
+    padding: 0px 0px 20px;
+}
+
+.gallery{
+    display: flex;
+    width: 690px;
+    margin: 0% 20%;   
+}
+
+.gallery_columone{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 45px 0px 0px;
+}
+
+
+.gallery_columtwo{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+}
+
+.gallery_columone_contact{
+    padding: 45px 0px 0px 0px;
+    font-size: 1.3em;
+}
+
+.gallery_columone_one{
+    padding: 0px 0px 45px 0px;
+}
+
+.gallery_columone_three{
+    padding: 0px 0px 45px 0px;
+}
+
+.gallery_columtwo_geo{
+    margin: 45px 0px 0px 0px;
+    border: none;
+    background-color: yellow;
+}
+
 
 
 /*font*/
@@ -320,12 +402,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4rem;
-    line-height: 1.5em;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 0.9rem;
+    font-size: 12rem;
     margin-bottom: 0px;
 }
 
