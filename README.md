@@ -15,8 +15,8 @@ Languages :
 
 ### Events et Events-details : Magali Garot 
 Languages : 
-    * HTML
-    * CSS
+    *HTML
+    *CSS
 
 Nom des fichiers : 
     * index.html
