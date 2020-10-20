@@ -9,6 +9,7 @@ https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/01-the
 ## Tasks
 
 Header, Footer and homepage : **Alan Massaro**
+
 Events and Events-details : **Magali Garot**
 
 ## Languages 
