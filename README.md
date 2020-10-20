@@ -1,37 +1,43 @@
-# museum-project
+# The project  ---- > Challenge: museum-project;
 
-#Le projet  ---- > Challenge: museum-project ;
+BeCode project to master HTML and CSS. 
+Teamwork with division of tasks and construction of web pages from a precise wireframe.
 
-Projet BeCode à réaliser en HTML et CSS. 
-Travail d’équipe avec répartition des tâches et construction de pages web à partir d’un wireframe précis.
-
-##Lien vers les consignes :
+## Link to exercice
 https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/01-the-field/04-html-css/03-client-project
 
+## Tasks
 
-Pour la page Event et Event-Details :
+Header, Footer and homepage : **Alan Massaro**
 
-Réalisation du header et Footer : Alan Massaro 
-Languages : 
-    * HTML
-    * CSS
+Events and Events-details : **Magali Garot**
 
-Réalisation de la partie main : Magali Garot 
-Languages : 
-    * HTML
-    * CSS
+## Languages 
+* HTML
+* CSS
 
-Nom des fichiers : 
-    * events.html, 
-    * events.css, 
-    * event_details.html, 
-    * event_details.CSS
+## Project structure
+
+* index.html
+* events.html
+* event_details.html
+* css/
+   * home.css
+   * main.css
+   * events.css
+   * event_details.CSS
+   * tablet_main.css
+* media/
+  * home/
+  * imagesevents/
+  * imageseventsdetails/
+  * font
 
 
-##Un peu plus sur nous :
+## About us
 
-###Allan :
+### Alan :
 
-###Magali :
+### Magali :
 Actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un stage, puis un emploi dans le web développement. 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel='stylesheet' media='screen and (max-width: 768px)' href='css/tablet_main.css' />
     <script src="https://kit.fontawesome.com/ad9205c9ea.js" crossorigin="anonymous"></script>
     <title>Museum of London</title>
 </head>
@@ -16,43 +17,56 @@
                 <div class="topnav__opening">
                     <span><i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup></span>
                     <div class="topnav__separator"> </div>
-                    <span><i class="far fa-map"></i> Get Direction</span>
+                    <a href="#"><span><i class="far fa-map"></i> Get Direction</span></a>
                 </div>
-                <div class="topnav__social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
-                    <div class="separator"> </div>
-                    <button class="btn btn--outline"><i class="fas fa-search"></i></button>
-                    <button class="btn btn--outline">EN <i class="fas fa-chevron-down"></i></button>
-                    <button class="btn btn--primary">tickets</button>
-                </div>
+                <ul class="topnav__social">
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"></a><div class="separator"> </div></li>
+                    <li><input type="search" class="btn btn--outline topnav__social__search"></li>
+                    <li>
+                        <select name="lang" id="" class="btn btn--outline topnav__social__lang">
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="DE">DE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                    </li>
+                    <li><button class="btn btn--primary">tickets</button></li>
+                </ul>
             </div>
             <div class="bottomnav">
-                <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                <div class="bottomnav__wrapper__logo">
+                    <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                    <i class="fas fa-bars bottomnav__navicon"></i>
+                </div>
+                
                 <ul class="bottomnav__list">
-                    <li><a href="hindex.html">Home</a></li>
-                    <li><a href="events.html">The Museum</a></li>
-                    <li>Visit</li>
-                    <li>What's on</li>
-                    <li>Collections</li>
-                    <li>Pages</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">The Museum</a></li>
+                    <li><a href="contact.html">Visit</a></li>
+                    <li><a href="events.html">What's on</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Pages</a></li>
                     <ul>
-                        <li><i class="fas fa-shopping-cart"></i></li>
-                        <li><div class="separator"> </div></li>
-                        <li><i class="fas fa-bars text--primary"></i></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><div class="separator"> </div></a></li>
+                        <li><a href="#"><i class="fas fa-bars text--primary"></i></a></li>
                     </ul>
-                    
-
                 </ul>
             </div>
         </nav>
     </header>
     <!-- -------------- Hero ----------------- -->
-    <section class="hero grid">
+    <section class="hero">
         <div class="hero__wrapper">
-            <p class="hero--uppercase">The past is our future</p>
+            <div class="hero__wrapper__heading">
+                <div class="hero--line"> </div>
+                <p class="hero--uppercase">The past is our future</p>
+                <div class="hero--line"> </div>
+            </div>
             <h1>World's Leading Museum of History</h1>
             <h2>Over 2.3k Collection</h2>
             <p>Let your inner light grow with the silence of history</p>
@@ -213,63 +227,189 @@
             <p class="subtitle">collections</p>
             <h2>Discover the Collection</h2>
         </div>
-        <div class="collections__grid">
-            <div class="grid__catherine">
-                <!-- <h4>St Catherine <br>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-1.jpg" alt="">
+        <div class="collection">
+            <div class="collection__img">
+                <img src="media/home/collections-2-1.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>
+                    st. catherine <br />
+                    alexandaria in prison
+                </h4>
             </div>
-            <div class="grid__alexandria">
-                <!-- <h4>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-2.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-2.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>alexandaria in prison</h4>
             </div>
-            <div class="grid__lascaux">
-                <!-- <h4>St Catherine <br>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-3.jpg" alt="">
-                <img src="media/home/collections-2-5.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-3.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
-            <div class="grid__ottoman">
-                <!-- <h4>Mercenary soldiers in Ottoman</h4> -->
-                <img src="media/home/collections-2-4.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-4.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
-            <div class="grid__babel">
-                <!-- <h4>Tower of Babel (Babylon)</h4> -->
-                <img src="media/home/collections-2-6.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-5.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
+            </div>
+            <div class="collection__img">
+                <img src="media/home/collections-2-6.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
         </div>
+        <div class="collection__last">
+            <span class="collection__line"></span><i class="fa fa-angle-right collection__right--angle" aria-hidden="true"></i>
+            <span class="collection__view">view all collection</span>
+        </div>
     </section>
+    
     <!-- ----------------- Numbers -------------- -->
     <section class="numbers">
-        <div class="numbers__list">
-            <div class="numbers__list__exhib">
+        <ul class="numbers__list">
+            <li class="numbers__list__item">
                 <img src="media/home/svg/icon_exhib.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">245</h4>
+                    <h4 class="numbers__list__heading">245</h4>
                     <p>EXHIBITIONS <br>Has Been Held</p>
                 </div>
-            </div>
-            <div class="numbers__list__visitors">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/svg/icon_visitors.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">93k</h4>
+                    <h4 class="numbers__list__heading">93k</h4>
                     <p>VISITORS <br>In Last Year</p>
                 </div>
                 
-            </div>
-            <div class="numbers__list__awards">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/SVG/icon_awards.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">106</h4>
+                    <h4 class="numbers__list__heading">106</h4>
                     <p>AWARDS <br>Have Received</p>
                 </div>
-            </div>
-            <div class="numbers__list__collections">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/SVG/icon_colection.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">15k</h4>
+                    <h4 class="numbers__list__heading">15k</h4>
                     <p>COLLECTIONS <br>Of Art & Designs</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- ----------------- Testimonials -------------- -->
+    <section class="testimonials">
+        <div class="testimonials__slider">            
+            <div class="testimonials_slides">
+                <div class="testimonials__slide" id="slide-1">
+                    <img src="media/home/testi-1-1.jpg" alt="avatar 1">
+                    <div class="testimonials__slider__slide__name">
+                        <p>Glen Ford</p>
+                        <p>California</p>
+                    </div>
+                    <p class="testimonials__slider__slide__quote">Wonderful exhibit. Great presentation with a lot of interesting things I did not know about Egypt. There is always something to learn!</p>
+                </div>
+                <div class="testimonials__slide" id="slide-2">
+                    <img src="media/home/testi-1-2.jpg" alt="avatar 2">
+                    <div class="testimonials__slider__slide__name">
+                        <p>Glen Ford</p>
+                        <p>California</p>
+                    </div>
+                    <p class="testimonials__slider__slide__quote">Wonderful exhibit. Great presentation with a lot of interesting things I did not know about Egypt. There is always something to learn!</p>
+                </div>
+                <div class="testimonials__slide" id="slide-3">
+                    <img src="media/home/testi-1-3.jpg" alt="avatar 3">
+                    <div class="testimonials__slider__slide__name">
+                        <p>Glen Ford</p>
+                        <p>California</p>
+                    </div>
+                    <p class="testimonials__slider__slide__quote">Wonderful exhibit. Great presentation with a lot of interesting things I did not know about Egypt. There is always something to learn!</p>
+                </div>
+            </div>
+            <div class="testimonials__bullet">
+                <a class="testimonials__bullet__item" href="#slide-1"></a>
+                <a class="testimonials__bullet__item" href="#slide-3"></a>
+                <a class="testimonials__bullet__item" href="#slide-2"></a>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------- Testimonials -------------- -->
+    <section class="blog">
+        <div class="blog__title">
+            <p class="subtitle">News blog</p>
+            <h2>Latest From Our Blog</h2>
+        </div>
+        <div class="blog__content">
+            <div class="blog__content__card">
+                <img src="media//home/blog-2-1.jpg" alt="Authentic Marathon">
+                <div class="content__card__info">
+                    <p class="blog__content__card__category">Admin_press release</p>
+                    <h4>Celebrating Authentic Marathon at Our Egypt Museum</h4>
+                    <hr>
+                    <p>Explain to our how all this mistaken idea of denouncing pleasure...</p>
+                    <div class="content__card__info__bottom">
+                        <a href="#">Read more +</a>
+                        <p class="blog__content__card__date">21.10.2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__content__column2">
+                <div class="blog__content__quote">
+                    <h4>"While I stand & regard it, the indifference to myself shown by a work of art in itself is art"</h4>
+                    <a href="#">read more +</a>
+                </div>
+                <div class="blog__content__card">
+                    <img src="media//home/blog-2-2.jpg" alt="Authentic Marathon">
+                    <div class="content__card__info">
+                        <p class="blog__content__card__category">Admin_press release</p>
+                        <h4>Celebrating Authentic Marathon at Our Egypt Museum</h4>
+                        <hr>
+                        <div class="content__card__info__bottom">
+                            <a href="#">Read more +</a>
+                            <p class="blog__content__card__date">21.10.2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__content__card">
+                <img src="media//home/blog-2-3.jpg" alt="Authentic Marathon">
+                <div class="content__card__info">
+                    <p class="blog__content__card__category">Admin_press release</p>
+                    <h4>Celebrating Authentic Marathon at Our Egypt Museum</h4>
+                    <hr>
+                    <p>Explain to our how all this mistaken idea of denouncing pleasure...</p>
+                    <div class="content__card__info__bottom">
+                        <a href="#">Read more +</a>
+                        <p class="blog__content__card__date">21.10.2019</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- ------------ Footer --------------- -->
+    <footer>
+        <div class="footer__grid">
+            <img class="footer__logo" src="media/home/footer-logo-1-1.png" alt="Logo">
+            <form action="">
+                <div class="footer__input">
+                    <div class="footer__input__icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="footer__input__area"><input type="text" placeholder="Enter an Email address..."></div>
+                    <button class="footer__input__button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+            </form>
+            <ul class="footer__social">
+                <li class="footer__social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p>Copyrights © 2019 <span class="footer--primary">Egypt</span>, All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
