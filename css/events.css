@@ -1,60 +1,24 @@
 /*HEADER*/
-
 .topnav{
     font-size: 0.6em;
+    height: 60%;
+    padding-bottom: 2%;
 }
 
-/*NAV*/
-
-    .click--select{
-    position: absolute;
-    top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 3px;
-    padding: 2px 40px;
-} 
-
-.click--select_box{
-    /*arrow none*/
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    background-color: white;
-    border: 0.5px;
-    align-items: center;
-    height: 40px;
-    width: 150px;
-    border: 0.5px solid white;
-
-    font-family:arial;  
-    font-weight: 100;
-    color: gray;
-    font-size: 1.1em;
-
-    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
-    background-size: 6px;
-    background-position-x: 12em;
-
-    border-style: none solid none none;
-    border-color: #e4e4e4;
+.bottomnav{
+    font-size: 0.6em;
+    height: 50%;
+    margin-top: -2%;
+    padding: 2%;
 }
 
-.click--select_box_text{
-    background-color: white;
+.btn{
+    font-size: 0.8em;
+    height: 60%;
 }
 
-.click--select_button {
-    padding: 2px 2px;
-    position: relative;
-    background-color:#302e2f;
-    color: white;
-    border: 0.5px solid #302e2f;
-    border-radius: 3px;
-    margin: 0px 0px 0px 15px;
+.logo{
+    width: 120px;
 }
 
 /*Hero*/
@@ -64,7 +28,7 @@
     flex-direction: column;
     background-image:url("../media/imagesevents/inner-banner-bg-1-1.jpg");
     background-repeat: no-repeat;
-    margin-top: -26px;
+    margin-top: -2vw;
     height: 250px; 
     width: 100%;
     background-position:center;
@@ -81,8 +45,7 @@
 
 .containerhero--picture_info{ /*Text hero*/
     display: flex;
-    width: 350px;
-    padding: 40px;
+    width: 30%;
     padding: 10px 10px 10px 10px;
     border: 0.5px;
     border-style: solid none none none;
@@ -100,11 +63,134 @@
     border-color: #e4e4e4;
 }
 
-/*Flex Picture*/
+/*NAV*/
+
+.containernav{
+    display: flex;
+    position: absolute;
+    z-index: 200;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    margin-top: 245px;
+    margin-left: 5%;
+    margin-right: 10%;
+    /*SHADOW*/
+    -webkit-box-shadow: 0px 29px 54px 5px rgba(228,228,228,0.44);
+    -moz-box-shadow: 0px 29px 54px 5px rgba(228,228,228,0.44);
+    box-shadow: 0px 29px 54px 5px rgba(228,228,228,0.44);
+    }
+
+    .click--select{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    width: 100%;
+    max-width: 50vw;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0% 0%;
+    } 
+
+.click--select_box_one{
+    /*arrow none*/  
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-color: white;
+    align-items: center;
+    height: 40px;
+    width: 15vw;
+
+    border: 0.5px;
+    border-style: none solid none none;
+    border-width: 0.1em;
+    border-radius: 3px;
+
+    font-family:arial;  
+    font-weight: 100;
+    color: gray;
+    font-size: 1.1em;
+
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+    background-size: 6px;
+    background-position-x: 12em;
+    border-color: #e4e4e4;
+}
+
+.click--select_box_two{
+    /*arrow none*/  
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    height: 40px;
+    width: 15vw;
+    
+    border: 0.5px;
+    border-style: none solid none none;
+    border-width: 0.1em;
+    border-radius: 0%;
+
+    font-family:arial;  
+    font-weight: 100;
+    color: gray;
+    font-size: 1.1em;
+
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+    background-size: 6px;
+    background-position-x: 12em;
+    border-color: #e4e4e4;
+}
+
+.click--select_box_three{
+    /*arrow none*/  
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background-color: white;
+    border: 0.5px;
+    align-items: center;
+    height: 40px;
+    width: 15vw;
+    border-style: none none none none;
+
+    font-family:arial;  
+    font-weight: 100;
+    color: gray;
+    font-size: 1.1em;
+
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
+    background-size: 6px;
+    background-position-x: 12em;
+    border-color: #e4e4e4;
+}
+
+.push_button {
+    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
+    position: relative;
+    background-color:#302e2f;
+    color: white;
+    border: 0.5px solid #302e2f;
+    border-radius: 3px;
+    margin: 0% 0% 0% 0%;
+    font-size: 1.3em;
+}
+
+/*GALLERY Picture*/
 
 .flex {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5%;
     position: relative; 
     z-index:1;
     width: 100%;
@@ -127,7 +213,7 @@
 .flex--picture--text {
     position: absolute;
     z-index:10;
-    transform: translateY(+60%); /*A POTASSER*/
+    transform: translateY(+62%); /*A POTASSER*/
     margin: 15px 15px 15px 15px; 
     padding: 15px 15px 15px 15px;
     background-color: white;
@@ -228,4 +314,21 @@ h3 {
 
 p {
     font-size: 0.3rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+   
+
+}
+    
+    
+
+
+
+@media screen and (max-width: 800px) {
+    
+
 }

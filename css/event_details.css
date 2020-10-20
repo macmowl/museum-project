@@ -1,9 +1,17 @@
-/*flexboxtop*/
+/*Grid*/
+.boxgrid{
+display: grid;
+grid-template-columns: 1fr 0.3fr;
+grid-template-areas:'boxgrid_left boxgrid_right' 
+                    ; 
+}
 
-.flexboxtop{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+.boxgrid_left{
+    grid-area: boxgrid_left;
+}
+
+.boxgrid_right{
+    grid-area: boxgrid_right;
 }
 
 /*Hero*/
@@ -56,7 +64,7 @@
     background-color: white;
     border-radius: 3px;
     text-align: center;
-    width: 780px;
+    width: 690px;
 }
 
 .click--select_box1{
@@ -142,7 +150,7 @@
 
 .containerinfo{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     background-color: #302e2f;
     width: 690px;
@@ -150,7 +158,7 @@
 }
 
 .text{
-    width: 240px;
+    width: 230px;
     padding: 20px 20px;
 }
 
@@ -162,14 +170,14 @@
     color: white;
 }
 
-.pictureegypt{
-    margin: 0px 0px 15px 0px; 
-    width: 382px;
+.text_pictureegypt{
+    /* margin: 0px 0px 15px 0px;  */
     background-image:url("../media/imageseventsdetails/event-d-1-1.jpg");
     background-repeat: no-repeat;
-    background-size: 400px;
+    /* background-size: 400px; */
     background-position: right;
     vertical-align:right;
+    width: 400px;
 }
 
 /*hr et icones*/
@@ -189,18 +197,17 @@
 /* FORM */
 
 .containerform{
-    width: 380px;
-    max-width: 400px;
+    width: 90%;
     height: 600px;
     padding: 20px 20px;
     color: #abadb0;
+    margin-left: -90%; /*@media*/
+    margin-top: 50px;
 }
 
 
 .message { 
     background-color: #302e2f;
-    grid-column-gap: 25px;
-    grid-row-gap: 40px;
     border-radius: 5px;
     padding: 25px 25px 25px 25px;
 }
@@ -210,26 +217,29 @@
     border-radius: 3px;
     text-align: left;
     font-size: 2em;
+    font-weight: 900;
 }
 
 .message--box_texttwo{ /*Name*/
     height: 50px;
-    width:82%;
+    width:90%;
     margin: 15px 15px;
     background-color: #302e2f;
     border: 0.5px solid  gray;
     color: #e4e4e4;
     border-radius: 3px;
+    text-align: center;
 }
 
 .message--box_texthree{ /*EMAIL*/
     height: 50px;
-    width:82%;
+    width:90%;
     margin: 15px 15px;
     background-color: #302e2f;
     border: 0.5px solid  gray;
     color: #e4e4e4;
     border-radius: 3px;
+    text-align: center;
 }
 
 .message--box_flex{ /*NUMBER + CHILDREN FLEX*/
@@ -241,7 +251,7 @@
 
 .message--box_flex_textfour{ /*NUMBER + -*/
     height: 50px;
-    width: 120px;
+    width: 50%;
     margin-right: 25px;
     background-color: #302e2f;
     border: 0.5px solid  gray;
@@ -249,18 +259,19 @@
     border-radius: 3px;
 }
 
-.message--box_flex_textfive{ /*CHILDREN*/height: 100px;
+.message--box_flex_textfive{ /*CHILDREN*/
     height: 50px;
-    width: 120px;
+    width: 50%;
     background-color: #302e2f;
     border: 0.5px solid  gray;
-    color: #e4e4e4;
+    color: gray;
     border-radius: 3px;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .message--box_textsix{ /*Message*/
-    width:82%;
+    width:90%;
     height: 100px;
     margin: 15px 15px;
     background-color: #302e2f;
@@ -270,7 +281,7 @@
 }
 
 .message--box_textseven{ /*BUTTON*/
-    width:82%;
+    width:90%;
     margin: 15px 15px;
     background-color: #D99578;
     border: 0.5px solid #D99578;;
@@ -374,10 +385,37 @@
 .gallery_columtwo_geo{
     margin: 45px 0px 0px 0px;
     border: none;
-    background-color: yellow;
+    height: 30%;
 }
 
+/*ARROW BOTTOM*/
 
+.arrowbox{
+    display: flex;
+    margin: 5% 20%;
+}
+
+.arrowbox_left{
+    margin: 0% 35% 0% 0%;
+    text-align: left;
+}
+
+.arrowbox_right{
+    text-align: right;
+}
+
+.arrowbox_arrowone{
+    width: 50px;
+    rotate: 90deg;
+}
+
+.arrowbox_left_gray{
+    color:gray;
+}
+
+.arrowbox_right_gray{
+    color:gray;
+}
 
 /*font*/
 
@@ -398,7 +436,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -414,3 +452,145 @@ p {
     font-size: 0.3rem;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 1680px) {
+
+    /*Grid*/
+.boxgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:'boxgrid_left'
+                        'boxgrid_right' 
+                        ; 
+    }
+    
+    .boxgrid_left{
+        grid-area: boxgrid_left;
+    }
+    
+    .boxgrid_right{
+        grid-area: boxgrid_right;
+    }
+
+    /*NAV*/
+.click--select{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+    
+    /* FORM */
+
+.containerform{
+    margin-top:60%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    vertical-align: bottom;
+}
+
+/*TEXT AND PICTURE EGYPT*/
+
+.containerinfo{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: column;
+    background-color: #302e2f;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 40%;
+}
+
+.text{
+    width: 40%;
+    padding: 6% 6%;
+}
+
+.text_pictureegypt{
+    background-image:url("../media/imageseventsdetails/event-d-1-1.jpg");
+    background-repeat: no-repeat;
+    background-position:bottom;
+    width: 100%;
+    max-width: 600px;
+}
+
+/*GALLERY & CONTACT & MAP ----> FLEX*/
+
+.titlegallery{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gallery{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin: 0% 3%; 
+    padding: 0% 3%;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.gallery_columone{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 2% 0% 0%;
+}
+
+
+.gallery_columtwo{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 0% 0% 0%;
+}
+
+.gallery_columone_one{
+    padding: 0px 0px 45px 0px;
+}
+
+.gallery_columone_three{
+    padding: 0px 0px 45px 0px;
+}
+
+.gallery_columtwo_geo{
+    margin: 45px 0px 0px 0px;
+    border: none;
+    height: 30%;
+}
+
+/*MAP*/
+
+.gallery_columone_contact{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.iframe {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 800px; 
+}
+   
+}
+
+
+@media screen and (max-width: 800px) {
+    
+
+}
