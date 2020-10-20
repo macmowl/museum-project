@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel='stylesheet' media='screen and (max-width: 768px)' href='css/tablet_main.css' />
     <script src="https://kit.fontawesome.com/ad9205c9ea.js" crossorigin="anonymous"></script>
     <title>Museum of London</title>
 </head>
@@ -19,10 +20,10 @@
                     <a href="#"><span><i class="far fa-map"></i> Get Direction</span></a>
                 </div>
                 <ul class="topnav__social">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"></a><i class="fab fa-twitter"></i></li>
-                    <li><a href="#"></a><i class="fab fa-instagram"></i></li>
-                    <li><a href="#"></a><i class="fab fa-youtube"></i></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
                     <li><a href="#"></a><div class="separator"> </div></li>
                     <li><input type="search" class="btn btn--outline topnav__social__search"></li>
                     <li>
@@ -37,21 +38,23 @@
                 </ul>
             </div>
             <div class="bottomnav">
-                <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                <div class="bottomnav__wrapper__logo">
+                    <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                    <i class="fas fa-bars bottomnav__navicon"></i>
+                </div>
+                
                 <ul class="bottomnav__list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">The Museum</a></li>
                     <li><a href="contact.html">Visit</a></li>
                     <li><a href="events.html">What's on</a></li>
-                    <li>Collections</li>
-                    <li>Pages</li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Pages</a></li>
                     <ul>
-                        <li><i class="fas fa-shopping-cart"></i></li>
-                        <li><div class="separator"> </div></li>
-                        <li><i class="fas fa-bars text--primary"></i></li>
+                        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li><a href="#"><div class="separator"> </div></a></li>
+                        <li><a href="#"><i class="fas fa-bars text--primary"></i></a></li>
                     </ul>
-                    
-
                 </ul>
             </div>
         </nav>
@@ -224,63 +227,80 @@
             <p class="subtitle">collections</p>
             <h2>Discover the Collection</h2>
         </div>
-        <div class="collections__grid">
-            <div class="grid__catherine">
-                <!-- <h4>St Catherine <br>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-1.jpg" alt="">
+        <div class="collection">
+            <div class="collection__img">
+                <img src="media/home/collections-2-1.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>
+                    st. catherine <br />
+                    alexandaria in prison
+                </h4>
             </div>
-            <div class="grid__alexandria">
-                <!-- <h4>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-2.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-2.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>alexandaria in prison</h4>
             </div>
-            <div class="grid__lascaux">
-                <!-- <h4>St Catherine <br>Alexandria in Prison</h4> -->
-                <img src="media/home/collections-2-3.jpg" alt="">
-                <img src="media/home/collections-2-5.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-3.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
-            <div class="grid__ottoman">
-                <!-- <h4>Mercenary soldiers in Ottoman</h4> -->
-                <img src="media/home/collections-2-4.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-4.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
-            <div class="grid__babel">
-                <!-- <h4>Tower of Babel (Babylon)</h4> -->
-                <img src="media/home/collections-2-6.jpg" alt="">
+            <div class="collection__img">
+                <img src="media/home/collections-2-5.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
+            </div>
+            <div class="collection__img">
+                <img src="media/home/collections-2-6.jpg" alt="" />
+                <a class="collection__link" href="#">+</a>
+                <h4>the lascaux cave</h4>
             </div>
         </div>
+        <div class="collection__last">
+            <span class="collection__line"></span><i class="fa fa-angle-right collection__right--angle" aria-hidden="true"></i>
+            <span class="collection__view">view all collection</span>
+        </div>
     </section>
+    
     <!-- ----------------- Numbers -------------- -->
     <section class="numbers">
-        <div class="numbers__list">
-            <div class="numbers__list__item">
+        <ul class="numbers__list">
+            <li class="numbers__list__item">
                 <img src="media/home/svg/icon_exhib.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">245</h4>
+                    <h4 class="numbers__list__heading">245</h4>
                     <p>EXHIBITIONS <br>Has Been Held</p>
                 </div>
-            </div>
-            <div class="numbers__list__item">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/svg/icon_visitors.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">93k</h4>
+                    <h4 class="numbers__list__heading">93k</h4>
                     <p>VISITORS <br>In Last Year</p>
                 </div>
                 
-            </div>
-            <div class="numbers__list__item">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/SVG/icon_awards.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">106</h4>
+                    <h4 class="numbers__list__heading">106</h4>
                     <p>AWARDS <br>Have Received</p>
                 </div>
-            </div>
-            <div class="numbers__list__item">
+            </li>
+            <li class="numbers__list__item">
                 <img src="media/home/SVG/icon_colection.svg" class="numbers__list__img" alt="">
                 <div class="numbers__list__exhib__box">
-                    <h4 class="numbers_list_heading">15k</h4>
+                    <h4 class="numbers__list__heading">15k</h4>
                     <p>COLLECTIONS <br>Of Art & Designs</p>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
     <!-- ----------------- Testimonials -------------- -->
     <section class="testimonials">

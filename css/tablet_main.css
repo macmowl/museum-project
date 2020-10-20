@@ -1,0 +1,120 @@
+/* ----- About us ----- */
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem 7rem 2rem;
+}
+
+.about__images {
+    height: 40rem;
+    margin-top: 3rem;
+}
+
+.about__image2 {
+    left: 0;
+}
+
+.about__image1 {
+    left: 40%;
+}
+
+.about__redsquare {
+    left: 25%;
+}
+
+.about__outlinesquare {
+
+    left: 25%;
+}
+
+/* ----- Exhibitions ------- */
+
+.exhibitions__grid {
+    grid-area: wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibition {
+    margin-bottom: 4rem;
+}
+
+/* ----- Events ------- */
+
+.events {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 7rem 2rem 0 2rem;
+    background-position: 0 0;
+
+}
+
+.schedule {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.eventlist {
+    width: 100%;
+}
+
+
+/* ----- Member ------- */
+
+.member {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 2rem;
+}
+
+.member__img img {
+    position: relative;
+    width: 100%;
+}
+
+.member__content {
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 6rem;
+    box-sizing: border-box;
+}
+
+/* ----- Collections ------- */
+
+.collections__grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ----- Numbers ------- */
+
+.numbers {
+    padding: 2.5rem 0 12.5rem 0;
+}
+
+.numbers__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.numbers__list__item {
+    margin-top: 10rem;
+}
+
+/* ------ Blog ------- */
+
+.blog {
+    display: flex;
+    padding: 7rem 2rem;
+    flex-direction: column;
+}
+
+.blog__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__grid {
+    width: 100%;
+}
