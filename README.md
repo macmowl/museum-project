@@ -8,17 +8,14 @@ https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/01-the
 
 ## Tasks
 
-### Header, Footer and homepage : Alan Massaro 
-Languages: 
+Header, Footer and homepage : **Alan Massaro**
+Events and Events-details : **Magali Garot**
+
+## Languages 
 * HTML
 * CSS
 
-### Events and Events-details : Magali Garot 
-Languages: 
-* HTML
-* CSS
-
-Project structure:
+## Project structure
 
 * index.html
 * events.html
@@ -28,6 +25,12 @@ Project structure:
    * main.css
    * events.css
    * event_details.CSS
+   * tablet_main.css
+* media/
+  * home/
+  * imagesevents/
+  * imageseventsdetails/
+  * font
 
 
 ## About us
