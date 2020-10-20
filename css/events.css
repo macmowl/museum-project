@@ -4,11 +4,23 @@
     font-size: 0.6em;
 }
 
+.bottomnav{
+    font-size: 0.6em;
+}
+
+.btn{
+    font-size: 0.8em;
+}
+
+.logo{
+    width: 2%;
+}
+
 /*NAV*/
 
     .click--select{
-    position: absolute;
-    top: 80px;
+    /* position: absolute;
+    top: -40px; */
     display: flex;
     align-items: center;
     justify-content: center;
