@@ -10,13 +10,13 @@ https://github.com/becodeorg/LIE-Hamilton-4.25/tree/master/01-main-course/01-the
 
 ### Header, Footer et de la homepage : Alan Massaro 
 Languages : 
-    * HTML
-    * CSS
+* HTML
+* CSS
 
 ### Events et Events-details : Magali Garot 
 Languages : 
-    *HTML
-    *CSS
+* HTML
+* CSS
 
 Nom des fichiers : 
     * index.html
