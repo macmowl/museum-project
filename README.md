@@ -1,4 +1,5 @@
 # The project  ---- > Challenge: museum-project;
+![Logo](https://macmowl.github.io/museum-project/media/home/light-logo.png)
 
 BeCode project to master HTML and CSS. 
 Teamwork with division of tasks and construction of web pages from a precise wireframe.
