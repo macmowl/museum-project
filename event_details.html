@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ad9205c9ea.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' media='screen and (min-width: 769px) and (max-width: 1024px)' href='css/tablet_main.css' />
+    <link rel='stylesheet' media='screen and (max-width: 768px)' href='css/mobile_main.css' />
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/event_details.css" type="text/css">
     <title>Document</title>
@@ -16,40 +18,50 @@
                 <div class="topnav__opening">
                     <span><i class="far fa-clock"></i> Plan Your Visit Today: 9 <sup>00</sup> --- 7 <sup>00</sup></span>
                     <div class="topnav__separator"> </div>
-                    <span><i class="far fa-map"></i> Get Direction</span>
+                    <a href="#"><span><i class="far fa-map"></i> Get Direction</span></a>
                 </div>
-                <div class="topnav__social">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
-                    <div class="separator"> </div>
-                    <button class="btn btn--outline"><i class="fas fa-search"></i></button>
-                    <button class="btn btn--outline">EN <i class="fas fa-chevron-down"></i></button>
-                    <button class="btn btn--primary">tickets</button>
-                </div>
+                <ul class="topnav__social">
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="topnav__social__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"></a><div class="separator"> </div></li>
+                    <li><input type="search" class="btn btn--outline topnav__social__search"></li>
+                    <li>
+                        <select name="lang" id="" class="btn btn--outline topnav__social__lang">
+                            <option value="EN">EN</option>
+                            <option value="FR">FR</option>
+                            <option value="DE">DE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                    </li>
+                    <li><button class="btn btn--primary">tickets</button></li>
+                </ul>
             </div>
             <div class="bottomnav">
-                <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                <div class="bottomnav__wrapper__logo">
+                    <img src="media/home/light-logo.png" class="bottomnav__logo" alt="Logo">
+                    <i class="fas fa-bars bottomnav__navicon"></i>
+                </div>
+                
                 <ul class="bottomnav__list">
-                    <li><a href="hindex.html">Home</a></li>
-                    <li><a href="events.html">The Museum</a></li>
-                    <li>Visit</li>
-                    <li>What's on</li>
-                    <li>Collections</li>
-                    <li>Pages</li>
-                    <ul>
-                        <li><i class="fas fa-shopping-cart"></i></li>
-                        <li><div class="separator"> </div></li>
-                        <li><i class="fas fa-bars text--primary"></i></li>
-                    </ul>
-                    
-
+                    <li class="bottomnav__list__item"><a href="index.html">Home</a></li>
+                    <li class="bottomnav__list__item"><a href="about.html">The Museum</a></li>
+                    <li class="bottomnav__list__item"><a href="contact.html">Visit</a></li>
+                    <li class="bottomnav__list__item"><a href="events.html">What's on</a></li>
+                    <li class="bottomnav__list__item"><a href="#">Collections</a></li>
+                    <li class="bottomnav__list__item"><a href="#">Pages</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                            <li><a href="#"><div class="separator"> </div></a></li>
+                            <li><a href="#"><i class="fas fa-bars text--primary"></i></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <main>
 
                 <!--Hero-->
@@ -288,9 +300,29 @@
             </div>
 
         </div>
-
            
     </main>
+
+       <!-- ------------ Footer --------------- -->
+       <footer>
+        <div class="footer__grid">
+            <img class="footer__logo" src="media/home/footer-logo-1-1.png" alt="Logo">
+            <form action="">
+                <div class="footer__input">
+                    <div class="footer__input__icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="footer__input__area"><input type="text" placeholder="Enter an Email address..."></div>
+                    <button class="footer__input__button"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+            </form>
+            <ul class="footer__social">
+                <li class="footer__social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="footer__social__item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p>Copyrights © 2019 <span class="footer--primary">Egypt</span>, All Rights Reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>
