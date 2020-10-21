@@ -80,18 +80,24 @@ left: 50%;
     grid-area: images;
     position: relative;
     margin: 0 0 0 20px;
+    width: 100%;
+    height: auto;
 }
 
 .about__image2 {
     left: 10%;
     top: 15%;
     position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 .about__image1 {
     left: 50%;
     top: 30%;
     position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 .about__redsquare {
@@ -368,13 +374,32 @@ left: 50%;
 
 .member__img {
     grid-area: image;
+}
+
+.member__img__wrapper {
     position: relative;
+    height: 100%;
+    width: 80%;
+    float: right;
+}
+
+.member__img i {
+    content: "<i class="fas fa-play"></i>";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 7rem;
+    color: white;
+    z-index: 2;
 }
 
 .member__img img {
-    width: 80%;
+    width: 100%;
     right: 0;
     position: absolute;
+    display: block;
 }
 
 .member__content {
@@ -596,9 +621,8 @@ left: 50%;
 .testimonials__slider {
     grid-area: wrapper;
     width: 500px;
-    height: 370px;
+    height: 100%;
     overflow: hidden;
-
 }
 
 .testimonials__slides {
@@ -616,7 +640,7 @@ left: 50%;
 }
 
 .testimonials__slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: none;
     border-radius: 10px;
 }
 
@@ -631,10 +655,34 @@ left: 50%;
     margin-right: 50px;
     transform-origin: center center;
     position: relative;
+    text-align: center;
 }
 
-.testinmonials__slide  img {
+.testimonials__slider__slide__name {
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 12rem;
+    margin: 2rem auto 4rem auto;
+    position: relative;
+}
+
+.testimonials__slide  img {
     border-radius: 50%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.testimonials__slide:after {
+    content: url('../media/home/collections-link-decor-1-1.png');
+    transform: scale(1.5, 1.5);
+    position: absolute;
+    top: 2.5rem;
+    left: 21rem;
+}
+
+.testimonials--primary {
+    color: var(--primary-color);
 }
 
 .testimonials__slider__slide__quote {
@@ -644,13 +692,18 @@ left: 50%;
 
 .testimonials__bullet {
     display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
 }
 
 .testimonials__bullet__item {
+    display: block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 1.5rem;
+    background-color: var(--lightGrey-color);
 }
 
 
@@ -701,7 +754,7 @@ left: 50%;
         0 4.9px 17.9px rgba(0, 0, 0, 0.021),
         0 22px 80px rgba(0, 0, 0, 0.07)
     ;
-    max-width: 350px;
+    max-width: 450px;
     margin-top: 2rem;
 }
 
@@ -731,7 +784,7 @@ left: 50%;
 
 .blog__content__column2 {
     width: auto;
-    max-width: 350px;
+    max-width: 450px;
 }
 
 .content__card__info__bottom {
