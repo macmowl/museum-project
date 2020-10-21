@@ -88,6 +88,7 @@ left: 50%;
     left: 10%;
     top: 15%;
     position: absolute;
+    max-width: 370px;
     width: 100%;
     height: auto;
 }
@@ -96,6 +97,7 @@ left: 50%;
     left: 50%;
     top: 30%;
     position: absolute;
+    max-width: 370px;
     width: 100%;
     height: auto;
 }
@@ -822,109 +824,3 @@ left: 50%;
     color: white;
     opacity: 0.5;
 }
-
-/* ------------- Footer ------------- */
-
-footer {
-    background-image: url('../media/home/footer-bg-1-1.jpg');
-    display: grid;
-    grid-template-columns: 1fr 70% 1fr;
-    grid-template-areas: 
-        ". wrapper ."
-    ;
-    padding: 7rem 0 7rem 0;
-    text-align: center;
-    justify-items: center;
-    font-size: 1.8rem;
-}
-
-.footer__grid {
-    grid-area: wrapper;
-    width: 50%;
-}
-
-.footer__logo {
-    margin-bottom: 2rem;
-}
-
-.footer__input {
-    display: table;
-    border-collapse: collapse;
-    width:100%;
-}
-
-.footer__input > div {
-    display: table-cell;
-    vertical-align: middle;  /* needed for Safari */
-}
-
-.footer__input__icon {
-    background:var(--primary-color);
-    color: white;
-    padding: 0 12px;
-    font-size: 2.2rem;
-}
-
-.footer__input__icon i {
-    margin: 0 1rem 0 1rem;
-}
-
-.footer__input__button {
-    background: white;
-    padding: 0 12px;
-    font-size: 2.2rem;
-    border: 0;
-    height: 60px;
-    cursor: pointer;
-}
-
-.footer__input__button i {
-    margin: 0 1rem 0 1rem;
-}
-
-.footer__input__button i {
-    color: var(--secondary-color);
-}
-
-.footer__input__area {
-    width:100%;
-}
-
-.footer__input input {
-    border: 0;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    height: 44px;
-    font-size: 1.8rem;
-}
-
-.footer__social {
-    list-style-type: none;
-    display: flex;
-    font-size:  1.8rem;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.footer__social__item {
-    margin-right: 2rem;
-}
-
-.footer__social__item:last-child {
-    margin-right: 0;
-}
-
-.footer__social__item a {
-    color: var(--lightGrey-color);
-    transition: color 0.3s ease-in-out;
-}
-
-.footer__social__item a:hover {
-    color: var(--primary-color);
-}
-
-.footer--primary {
-    color: var(--primary-color);
-}
-
