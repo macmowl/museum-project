@@ -2,7 +2,7 @@
 .topnav{
     font-size: 0.6em;
     height: 60%;
-    padding-bottom: 2%;
+    padding-bottom: 0.2vw;
 }
 
 .bottomnav{
@@ -73,7 +73,7 @@
     align-content: flex-end;
     justify-content: center;
     margin-top: 245px;
-    margin-left: 5%;
+    margin-left: 10%;
     margin-right: 10%;
     /*SHADOW*/
     -webkit-box-shadow: 0px 29px 54px 5px rgba(228,228,228,0.44);
@@ -98,11 +98,13 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    padding: 0px 20px 0px 20px;
     
     background-color: white;
     align-items: center;
     height: 40px;
-    width: 15vw;
+    width: 12vw;
 
     border: 0.5px;
     border-style: none solid none none;
@@ -116,7 +118,6 @@
 
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
     background-size: 6px;
-    background-position-x: 12em;
     border-color: #e4e4e4;
 }
 
@@ -126,12 +127,14 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    padding: 0px 20px 0px 20px;
     
     background-color: white;
     border: 0.5px;
     align-items: center;
     height: 40px;
-    width: 15vw;
+    width: 12vw;
     
     border: 0.5px;
     border-style: none solid none none;
@@ -145,7 +148,6 @@
 
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
     background-size: 6px;
-    background-position-x: 12em;
     border-color: #e4e4e4;
 }
 
@@ -155,12 +157,14 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    padding: 0px 20px 0px 20px;
     
     background-color: white;
     border: 0.5px;
     align-items: center;
     height: 40px;
-    width: 15vw;
+    width: 12vw;
     border-style: none none none none;
 
     font-family:arial;  
@@ -170,12 +174,12 @@
 
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right white;
     background-size: 6px;
-    background-position-x: 12em;
     border-color: #e4e4e4;
 }
 
 .push_button {
-    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
+    width: 8vw;
+    padding: 0.7vw 0.3vw 0.7vw 0.3vw;
     position: relative;
     background-color:#302e2f;
     color: white;
@@ -196,7 +200,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 1000px;
     justify-content: center;
     background-color: white;
 }
@@ -204,7 +208,7 @@
 .flex--picture--img{
     position: relative;
     z-index:2;
-    width: 300px;
+    width: 400px;
     height: auto;
     margin: 15px 15px 15px 15px; 
 
@@ -213,13 +217,57 @@
 .flex--picture--text {
     position: absolute;
     z-index:10;
-    transform: translateY(+62%); /*A POTASSER*/
+    transform: translateY(+80%); 
     margin: 15px 15px 15px 15px; 
-    padding: 15px 15px 15px 15px;
+    padding: 18px 18px 30px 18px;
     background-color: white;
     align-self: end;
     line-height: 1em;
 }
+
+.flex--picture--text_push { /*BUTTON*/
+    position: absolute;
+    z-index:12;
+    width: 230px;
+    height: 500px;
+    border: none;
+    opacity: 0%;
+    transform: translateY(-90%); 
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.flex--picture--text_push:hover{ /*BUTTON HOVER*/
+    position: absolute;
+    z-index:12;
+    width:10vw;
+    margin: 8% 3%;
+    background-color: #D99578;
+    border: 0.5px solid #D99578;;
+    color: white;
+    border-radius: 5px;
+    padding: 16px 20px;
+    opacity: 100%;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    transform: translateY(2%); 
+}
+
+.flex--picture--text:hover{
+    position: absolute;
+    z-index:10;
+    transform: translateY(20%); 
+    margin-top:30px; 
+    padding: 30px 30px 30px 30px;
+    background-color: white;
+    align-self: end;
+    line-height: 1em;
+    height: 200px;
+}
+
 
 /*Button*/
 
@@ -228,6 +276,7 @@
     position: relative;
     justify-content: center;
     margin: 25px;
+    font-size: 1em;
 }
 
 .buttongalery--form{
@@ -238,8 +287,8 @@
     border-radius: 5px;
     padding: 5px 5px;
     line-height: 0em;
-    height: 25px;
-    width: 40px;
+    height: 2vw;
+    width: 4vw;
 }
 
 .buttongalery--number{
@@ -250,8 +299,8 @@
     border-radius: 5px;
     padding:5px 5px;
     line-height: 0em;
-    height: 25px;
-    width: 25px;
+    height: 2vw;
+    width: 2vw;
 }
 
 /*hr et icones*/
@@ -303,7 +352,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     line-height: 1.5em;
 }
 
@@ -320,7 +369,11 @@ p {
 
 @media screen and (max-width: 900px) {
 
-   
+   /*GALLERY Picture*/
+
+
+
+
 
 }
     
