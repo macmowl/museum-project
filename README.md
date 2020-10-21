@@ -40,6 +40,7 @@ Events and Events-details : **Magali Garot**
 ## About us
 
 ### Alan :
+9 years as a UI Designer, it's time to add some new skills to my CV and become a super autonomous webdev with a touch of poetry. Objective: to control the world
 
 ### Magali :
 Actuellement en formation à BeCode Liège, je me forme avec comme objectif de décrocher un stage, puis un emploi dans le web développement. 
