@@ -236,6 +236,7 @@
     text-align: center;
     vertical-align: middle;
     transform: translateY(2%); 
+    text-decoration:none
 }
 
 .flex--picture--text:hover{
@@ -248,6 +249,7 @@
     align-self: end;
     line-height: 1em;
     height: 200px;
+    text-decoration:none
 }
 
 
